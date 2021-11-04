@@ -83,12 +83,12 @@ const PropertyDetailsPage: React.FC<PropertyDetailsPageProps> = ({propertyId}) =
       <form onSubmit={onFormSubmit}>
         <Box display="flex" alignItems="center" justifyContent="center" flexDirection="column">
           <TextField onChange={onFormValueChange} className={classes.spacing} type="number" name="id" value={property?.id || ''} label="Id" placeholder="Id"/>
-          <TextField onChange={onFormValueChange} className={classes.spacing} name="Name" value={property?.name || ''} label="Name" placeholder="Name"/>
-          <TextField onChange={onFormValueChange} className={classes.spacing} name="Plan number" value={property?.plan || ''} label="Plan number" placeholder="Plan Number"/>
-          <TextField onChange={onFormValueChange} className={classes.spacing} type="number" name="Unit count" value={property?.units || ''} label="Unit count" placeholder="Units"/>
-          <TextField onChange={onFormValueChange} className={classes.spacing} name="City" value={property?.city || ''} label="City" placeholder="City"/>
-          <TextField onChange={onFormValueChange} className={classes.spacing} type="number" name="Region" value={property?.region || ''} label="Region" placeholder="Region"/>
-          <TextField onChange={onFormValueChange} className={classes.spacing} type="number" name="Manager" value={property?.manager || ''} label="Manager" placeholder="Manager"/>
+          <TextField onChange={onFormValueChange} className={classes.spacing} name="name" value={property?.name || ''} label="Name" placeholder="Name"/>
+          <TextField onChange={onFormValueChange} className={classes.spacing} name="plan" value={property?.plan || ''} label="Plan number" placeholder="Plan Number"/>
+          <TextField onChange={onFormValueChange} className={classes.spacing} type="number" name="units" value={property?.units || ''} label="Unit count" placeholder="Units"/>
+          <TextField onChange={onFormValueChange} className={classes.spacing} name="city" value={property?.city || ''} label="City" placeholder="City"/>
+          <TextField onChange={onFormValueChange} className={classes.spacing} type="number" name="region" value={property?.region || ''} label="Region" placeholder="Region"/>
+          <TextField onChange={onFormValueChange} className={classes.spacing} type="number" name="manager" value={property?.manager || ''} label="Manager" placeholder="Manager"/>
           <Button className={classes.spacing} type="submit" variant="contained" color="primary">Submit</Button>
           <Button disabled={!propertyId} variant="outlined" color="secondary" onClick={onDelete}>Delete</Button>
         </Box>
