@@ -19,8 +19,8 @@ export const getAll = async(): Promise<Property[]> => {
 }
 
 export const getById  =  async(id:string):Promise<Property> =>{
-  const propertyList =  await getAll();
-  const property = propertyList.find(property => property.id === id);
+  const propertiesList =  await getAll();
+  const property = propertiesList.find(property => property.id === id);
   if(property){
     return  property
   }
